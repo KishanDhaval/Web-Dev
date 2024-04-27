@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    height: 100px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 40%;
+}
+.logo img{
+    width: 170px;
+    height:57px;
+}
+
+.content{
+   width: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.content i{
+    font-size: 1.4rem;
+  
+}
+.content a{
+    padding: 13px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color :#3d3d3d;
+}
+
+
