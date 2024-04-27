@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 50%;
+            box-sizing: border-box;
+            border: 2px solid black;
+            height: 50%;         
+        }
+        .box1{
+            background-color: red;
+        }.box2{
+            background-color: rgb(139, 97, 97);
+        }.box3{
+            background-color: rgb(131, 189, 92);
+        }
+
+        .right{
+            transform: translateX(250px);    
+        }
+        .left{
+            transform: translateX(-250px);    
+        }
+        .up{
+            transform: translateY(-250px);    
+        }
+        .down{
+            transform: translateY(250px);    
+        }
+    </style>
+</head>
+<body>
+    <div class=" contain container">
+        <div class=" box box1" id="1">1</div>
+        <div class=" box box2" id="2">2</div>
+        <div class=" box box3" id="3">3</div>
+        <div class=" box temp" id="4">4</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
