@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2</title>
+</head>
+    <style>
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+            font-size: x-large;
+        }
+        .b1{
+            background-color: aqua;
+        }
+        .b2{
+            background-color: bisque;
+        }
+        .b3{
+            background-color: rgb(254, 186, 209);
+        }
+        .b4{
+            background-color: rgb(246, 246, 179);
+        }
+        .b5{
+            background-color: rgb(213, 142, 249);
+        }
+        .container{
+            border:2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                 "main article empty" 
+                                 "footer footer footer";
+        }
+        .box{
+            height: 105px;
+            /* width: 55px; */
+            border: 2px solid black;
+        }
+        .box1{
+            grid-area: nav;
+        }  
+        .box2{
+            grid-area: main;
+        } 
+        .box3{
+            grid-area: article;
+        }  
+        .box4{
+            grid-area: empty;
+        } 
+        .box5{
+            grid-area: footer;
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="box b1 box1 flex">1</div>
+        <div class="box b2 box2 flex">2</div>
+        <div class="box b3 box3 flex">3</div>
+        <div class="box b4 box4 flex">4</div>
+        <div class="box b5 box5 flex">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* There is no justify-items use in flex */
+
+
+body{
+    text-align: center;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border:2px solid black;
+    margin: 5px;
+}
+
+/* when no Wrap is there and for items align we use align-items */
+/* In Sort for one line of contant */
+container{
+    height: 80vh;
+    width: 80vw;
+    border: 2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    /* for main axis  */
+    /* flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: row-reverse; */
+} 
+
+
+/* --->when wrap is use and for align  wrap items to center use align-content  */
+/* --->In sort for multiline content */
+.container{
+
+    height: 80vh;
+    /* width: 800px; */
+    border: 2px solid black;
+    display:flex;
+
+    /* justyfy-content is work accordinng to axix */
+    /* justify-content: center; */
+
+    /*---> Note content and item */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    align-content:center;
+    align-content:space-around;
+    align-content:flex-start;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+
+    /* --->this is use for set both flex direction and wrap */
+    /* flex-flow: row wrap ; */
+    /* flex-flow: column wrap; */
+
+
+    /* -->About gap */
+    /* gap: 30px; */
+    /* column-gap: 10px; */
+    /* row-gap: 20px; */
+    /* gap: 20px 10px; */
+}
+
+.box1{
+    background-color:aqua ;
+}
+.box2{
+    background-color: rgb(85, 255, 113);
+}
+.box3{
+    background-color:rgb(253, 228, 129) ;
+}
+.box4{
+    background-color:rgb(228, 143, 195) ;
+}
+.box5{
+    background-color:rgb(118, 155, 250) ;
+}
+
+/* -->use of order properties */
+/* default order is zero(0) */
+/* .order{
+    order: 10;
+} */
+
+
+/* Default flex-grow  is 1 */
+/* .grow{
+    flex-grow: 2;
+} */
+
+
+/* in case of no wrap item shrink 2 time compare to other */
+/* .shrink{
+    flex-shrink: 2;
+} */

@@ -1,0 +1,63 @@
+#d{
+    height: 265px;
+    width: 100px;
+    background-color: rgb(54, 50, 50);
+    /* transition: all; */
+  animation:infinite;
+   border: 3px solid black;
+}
+
+#d1{
+    border : 2px solid red;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(155, 74, 74);
+    margin-left: 25px;
+    border-radius: 50%;
+    animation:redlight 3s step-start 0s  alternate;
+}
+#d2{
+    border : 2px solid orange;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(170, 140, 84);
+    margin-top: 35px;
+    margin-left: 25px;
+    border-radius: 50%;
+    animation:yellowlight 3s step-start 3s 1 alternate;
+
+}
+#d3{    
+    border : 2px solid green;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(80, 141, 80);
+    margin-top: 35px;
+    margin-left: 25px;
+    border-radius: 50%;
+    animation:greenlight 3s  step-start 6s 1 alternate;
+
+}
+
+
+/* @keyframes light {
+    0%{background-color: red;}
+    50%{background-color: orange;}
+    100%{background-color: green;}
+} */
+
+@keyframes redlight{
+
+    from{background-color: rgb(155, 74, 74); }  
+    to{background-color: red;}
+}
+@keyframes yellowlight{
+    from{background-color: rgb(170, 140, 84);}
+    to{background-color: orange;}
+}
+@keyframes greenlight{
+    from{background-color: rgb(80, 141, 80);}
+    to{background-color: green;}
+}
+
+

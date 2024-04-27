@@ -1,0 +1,11 @@
+/* must use inline-block instead of block */
+div{
+    background-color: lightblue;
+    display: inline-block;
+    /* display: none; */
+}
+button{
+    background-color: aquamarine;
+    display: block;
+    visibility: hidden;
+}

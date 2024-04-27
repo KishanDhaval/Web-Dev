@@ -1,0 +1,21 @@
+/* flex property goes to outer contener */
+
+.outer{
+    background-color: aqua;
+    height: 400px;
+    width: 400px;
+    display:flex;
+    flex-direction: row;
+    /* justify content use for row operation */
+    justify-content: center;
+    /* align items use for column operation */
+    align-items: center;
+}
+.inner{
+    background-color: rgb(60, 105, 105);
+    height: 100px;
+    width: 100px;
+    /* align self has higher priorityy thank align item */
+    /* align-self:flex-start;
+    align-self:flex-end ; */
+}

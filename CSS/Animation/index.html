@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .contaner{
+        background-color:antiquewhite;
+        width: 80vw;
+        height: 80vh;
+
+    }
+    .box{
+        background-color: aqua;
+        width: 100px;
+        height:100px;
+
+        animation-name:kishanAnimation;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: 3;
+        animation-direction:alternate;
+        /* animation-fill-mode: forwards;  -->maintain state after animation*/
+        /* animation-fill-mode: backwards; */
+
+        /* animation: name duration timing-function delay iteration-count direction fill-mode;  */
+        animation: kishanAnimation 2s ease-in-out  1s 1 alternate forwards  ;
+    }
+    @keyframes kishanAnimation{
+        from{
+
+        }
+        to{
+            background-color: yellow;
+            transform: translateX(60vw);
+        }
+    }
+</style>
+<body>
+    <div class="contaner">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

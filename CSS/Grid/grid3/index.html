@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2</title>
+</head>
+    <style>
+        .b1{
+            background-color: aqua;
+        }
+        .b2{
+            background-color: bisque;
+        }
+        .b3{
+            background-color: rgb(254, 186, 209);
+        }
+        .b4{
+            background-color: rgb(246, 246, 179);
+        }
+        .b5{
+            background-color: rgb(213, 142, 249);
+        }
+        .container{
+
+            /* ==========Try Below ========== */
+            /* justify-items: center;
+            align-items: center; */
+            
+            /* place-content:center; */
+            /* Here justify-content and align-content use when grid is small and container is large */
+
+            width: 80vw;
+            height: 80vh;
+            border:2px solid black;
+            display: grid;
+
+            /* -->Use of fr it's use to divid container accoring to width of container */
+            /* For understant use of this remove hieght and width of box */
+            /* grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-columns: repeat(4, minmax(100px,1fr)); */
+            grid-template-columns: 1fr 3fr 1fr;
+
+            /* -->Use of gap */
+            /* gap: 10px 5px; */
+            /* row-gap: 10px; */
+            /* column-gap: 10px; */
+        }
+        .box{
+            width: 105px;
+            height: 105px;
+            border: 2px solid black;
+        }
+
+        box1{
+            /* Try for perticular item */
+            align-self: end;
+            justify-self: end;
+        }
+      
+    </style>
+<body>
+    <div class="container">
+        <div class="box b1 box1">1</div>
+        <div class="box b2 box2">2</div>
+        <div class="box b3 box3">3</div>
+        <div class="box b4 box4">4</div>
+        <div class="box b5 box5">5</div>
+    </div>
+</body>
+</html>

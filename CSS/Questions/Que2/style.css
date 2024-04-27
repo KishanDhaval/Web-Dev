@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+/* body{
+    background-color: rgb(39, 36, 36);
+    height: 100px;
+} */
+#div{
+    height: 60px;
+    background-color: rgb(39, 36, 36);
+}
+#logo{
+    color: orange;
+    font-size: 20px;
+}
+a{
+    margin-right:  200px;
+    text-decoration: none;
+}
+button{
+    color: black;
+    background-color: orange;
+}

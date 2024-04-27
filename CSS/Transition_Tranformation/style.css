@@ -1,0 +1,40 @@
+div{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    transition-property: all;
+    transition-duration: 1s;
+    /* transition-timing-function: steps(2); */
+    /* transition-delay: 1ms; */
+
+    /* other method to aply transition */
+    /* transition:all 2s ease-in 1s; */
+
+    /* tranform property */
+    /* transform: rotate(90deg); */
+    /* rotate: z 90deg; */
+    /* scale: 0.5; */
+    /* transform: scale(2,0.5); */
+}
+
+
+div:hover{
+    background-color: aquamarine;
+    color: blue;
+    font-size: larger;
+    /* transition-duration: 1s; */
+
+    /* use to scale up at hover time */
+    transform: scale(1.1,1.1);
+
+        /* translate: 20px; */
+    /* transform: skew(45deg); */
+    /* rotate: 90deg; */
+}
+div:active{
+    background-color: black;
+}
